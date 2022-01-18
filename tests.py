@@ -1,7 +1,7 @@
 import unittest
 
 
-from test_wbot.wbot import get_location
+from wbot import get_location
 
 
 lat = 127
