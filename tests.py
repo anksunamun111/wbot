@@ -1,15 +1,14 @@
 import unittest
-import config
 from wbot import *
 import asyncio
-import pytest
 
 class TgBotTests(unittest.TestCase):
 
     def test_owm_token_is_exists(self):
+        import config
         self.assertIsNotNone(config.TOKEN)
 
-    @pytest.fixture
+
     def location_test(self):
         model = asyncio.run(get_location(39.92, 116.41))
         print(model)
