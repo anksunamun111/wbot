@@ -3,6 +3,9 @@ import config
 from pyowm import OWM
 bot = telebot.TeleBot(config.TOKEN)
 
+def get_location(lat, lon):
+    url = f"https://yandex.ru/pogoda/maps.nowcat?lat={lat}&lon={lon}&via=hnav&le_Lightning=1"
+    return url
 
 @bot.message_handler(content_types=['text'])
 def get_text_messages(message):
@@ -28,9 +31,9 @@ def get_weather(message):
     bot.send_message(message.from_user.id, 'Введите название города')
     bot.register_next_step_handler(message, get_weather)
 
-def get_location(lat, lon):
-    url = f"https://yandex.ru/pogoda/maps.nowcat?lat={lat}&lon={lon}&via=hnav&le_Lightning=1"
-    return url
+def f():
+    r = 1 + 1
+    return r
 
 def weather(city: str):
     owm = OWM('4f6561b0f9634a9e6852942a41ad20df')
