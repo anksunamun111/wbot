@@ -1,17 +1,15 @@
 import unittest
-#import telebot
-#from wbot import get_location
-
+import config
 
 class TgBotTests(unittest.TestCase):
-    def testOne(self):
-        self.assertEqual(1 + 1, 2)
 
-#     def testGetLocation(self):
- #      tGL = get_location(lat, lon)
-  #      self.assertIsNotNone(tGL)
+    def test_owm_token_is_exists(self):
+        self.assertIsNotNone(config.TOKEN)
 
-#1
+    def test_get_weather(self):
+        with self.assertRaises(Exception):
+            from wbot import get_weather
+            get_weather("вв")
 
 if __name__ == "__main__":
     unittest.main()
