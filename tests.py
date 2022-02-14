@@ -1,6 +1,6 @@
 import unittest
-import telebot
-from wbot import get_location
+#import telebot
+#from wbot import get_location
 
 class TgBotTests(unittest.TestCase):
     def testOne(self):
