@@ -43,5 +43,8 @@ def weather(city: str):
     return temperature, wind_speed, location
 
 
+
+
+
 # RUN
 bot.polling(none_stop=True)
