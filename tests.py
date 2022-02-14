@@ -1,5 +1,5 @@
 import unittest
-
+import telebot
 from wbot import get_location
 
 class TgBotTests(unittest.TestCase):
