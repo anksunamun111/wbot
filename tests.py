@@ -1,15 +1,21 @@
 import unittest
 import config
+from wbot import *
+import asyncio
 
 class TgBotTests(unittest.TestCase):
 
     def test_owm_token_is_exists(self):
         self.assertIsNotNone(config.TOKEN)
 
-    def test_get_weather(self):
-        with self.assertRaises(Exception):
-            from wbot import get_weather
-            get_weather("вв")
+    def location_test(self):
+        model = asyncio.run(get_location(39.92, 116.41))
+        print(model)
+
+   # def test_get_weather(self):
+       # with self.assertRaises(Exception):
+            #from wbot import get_weather
+            #get_weather("вв")
 
     #def test_get_location(self):
         #from wbot import get_location
