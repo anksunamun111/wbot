@@ -1,5 +1,6 @@
 import unittest
-from wbot import *
+#from wbot import *
+import wbot
 import asyncio
 
 class TgBotTests(unittest.TestCase):
@@ -15,7 +16,7 @@ class TgBotTests(unittest.TestCase):
 
     def test_f(self):
         #model = asyncio.run(f())
-        print(f())
+        print(wbot.f())
 
 
     #def test_get_weather(self):
@@ -29,3 +30,4 @@ class TgBotTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
