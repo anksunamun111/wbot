@@ -12,9 +12,9 @@ https://t.me/weather_kpo_bot
 ![img_2.png](img_2.png)
 ![img_3.png](img_3.png)
 
-##Our team:
+## Our team:
 
-###Group 3530904/90105
+### Group 3530904/90105
 - Egor Selischev
 - Kirill Pyatyshev
 - Georgy Abisalov
