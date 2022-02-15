@@ -1,5 +1,5 @@
 import unittest
-#import asyncio
+
 
 class TgBotTests(unittest.TestCase):
 
@@ -7,16 +7,15 @@ class TgBotTests(unittest.TestCase):
         import config
         self.assertIsNotNone(config.TOKEN)
 
-
     #def test_location(self):
-        #model = asyncio.run(get_location(39.92, 116.41))
-       # print(model)
-
-    def test_f(self):
         #import wbot
-        #model = asyncio.run(wbot.f())
-        print(1 + 1)
+        #import asyncio
+        #self.assertIsNotNone(wbot.get_location(39.92, 116.41))
+        #print(model)
 
+    def test_d(self):
+        import wbot
+        self.assertEqual(wbot.f(), 2)
 
     #def test_get_weather(self):
         #with self.assertRaises(Exception):

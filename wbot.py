@@ -31,10 +31,6 @@ def get_weather(message):
     bot.send_message(message.from_user.id, 'Введите название города')
     bot.register_next_step_handler(message, get_weather)
 
-def f():
-    r = 1 + 1
-    return r
-
 def weather(city: str):
     owm = OWM('4f6561b0f9634a9e6852942a41ad20df')
     mgr = owm.weather_manager()
@@ -45,7 +41,8 @@ def weather(city: str):
     wind_speed = weather.wind()['speed']
     return temperature, wind_speed, location
 
-
+def f():
+    return 2
 
 
 
