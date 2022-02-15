@@ -7,10 +7,10 @@ The simplest weather bot, which gives the temperature, wind speed in the city en
 ## Link
 https://t.me/weather_kpo_bot
 ## Usage example:
-![img.png](img.png)
-![img_1.png](img_1.png)
-![img_2.png](img_2.png)
-![img_3.png](img_3.png)
+![](docs/img.png)
+![](docs/img_1.png)
+![](docs/img_2.png)
+![](docs/img_3.png)
 
 ## Our team:
 
