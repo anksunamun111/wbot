@@ -1,6 +1,4 @@
 import unittest
-#from wbot import *
-import wbot
 import asyncio
 
 class TgBotTests(unittest.TestCase):
@@ -14,9 +12,10 @@ class TgBotTests(unittest.TestCase):
         #model = asyncio.run(get_location(39.92, 116.41))
        # print(model)
 
-    def test_f(self):
-        #model = asyncio.run(f())
-        print(wbot.f())
+    #def test_f(self):
+        import wbot
+        #model = asyncio.run(wbot.f())
+        #print(1 + 1)
 
 
     #def test_get_weather(self):
