@@ -44,4 +44,4 @@ def weather(city: str):
 def f():
     return 2
 
-#bot.polling(none_stop=True)
+bot.polling(none_stop=True)
